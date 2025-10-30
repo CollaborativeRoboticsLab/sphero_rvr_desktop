@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <launch>
 
-  <arg name="rvizconfig" default="$(find sphero_rvr_desktop)/rviz/urdf.rviz" />
+  <arg name="rvizconfig" default="$(find-pkg-share sphero_rvr_desktop)/rviz/urdf.rviz" />
 
-  <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" />
+  <node pkg="rviz2" type="rviz2" name="rviz" args="-d $(var rvizconfig)" />
 
 </launch>
