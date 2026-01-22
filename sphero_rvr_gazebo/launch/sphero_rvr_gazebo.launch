@@ -1,13 +1,11 @@
 <?xml version="1.0"?>
 <launch>
     <arg name="world_name" default="worlds/empty.world"/>
-    <!-- <arg name="world_name" default="$(find sphero_rvr_algorithms)/worlds/obstacles.world"/> -->
-    <!-- <arg name="world_name" default="$(find sphero_rvr_algorithms)/worlds/ball_maze.world"/> -->
 
     <arg name="gui" default="false"/>
 
     <!-- robot -->
-    <include file="$(find sphero_rvr_description)launch/robot.launch"/>
+    <include file="$(find sphero_rvr_description)/launch/robot.launch"/>
 
     <!-- controller manager -->
     <rosparam command="load" file="$(find sphero_rvr_controllers)/config/controllers.yaml" />

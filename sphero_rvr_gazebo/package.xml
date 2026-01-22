@@ -1,20 +1,18 @@
 <?xml version="1.0"?>
-<package format="2">
+<package format="3">
   <name>sphero_rvr_gazebo</name>
-  <version>0.0.1</version>
+  <version>1.0.0</version>
   <description>sphero rvr gazebo simulation</description>
 
-  <maintainer email="mik-p@github.com">mik p</maintainer>
-
   <license>MIT</license>
+  <maintainer email="mppritchard3@hotmail.com">mik-p</maintainer>
+  <author email="mppritchard3@hotmail.com">mik p</author>
 
-  <author email="mik-p@github.com">mik p</author>
+  <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <buildtool_depend>catkin</buildtool_depend>
-
-  <depend>sphero_rvr_description</depend>
-  <depend>sphero_rvr_control</depend>
-  <depend>sphero_rvr_controllers</depend>
+  <exec_depend>sphero_rvr_description</exec_depend>
+  <exec_depend>sphero_rvr_control</exec_depend>
+  <exec_depend>sphero_rvr_controllers</exec_depend>
 
   <exec_depend>controller_manager</exec_depend>
   <exec_depend>gazebo_plugins</exec_depend>
@@ -22,4 +20,8 @@
   <exec_depend>gazebo_ros_control</exec_depend>
 
   <exec_depend>hector_gazebo_plugins</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
 </package>
