@@ -3,6 +3,6 @@
 
   <arg name="rvizconfig" default="$(find-pkg-share sphero_rvr_desktop)/rviz/urdf.rviz" />
 
-  <node pkg="rviz2" type="rviz2" name="rviz" args="-d $(var rvizconfig)" />
+  <node pkg="rviz2" exec="rviz2" name="rviz" args="-d $(var rvizconfig)" />
 
 </launch>
