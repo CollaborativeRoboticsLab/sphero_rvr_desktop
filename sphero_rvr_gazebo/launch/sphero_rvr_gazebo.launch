@@ -12,13 +12,13 @@
     <include file="$(find-pkg-share sphero_rvr_controllers)/launch/sphero_rvr_controllers.launch"/>
 
     <!-- localisation -->
-    <!-- <include file="$(find-pkg-share sphero_rvr_navigation)/launch/localisation.launch" /> -->
+    <include file="$(find-pkg-share sphero_rvr_navigation)/launch/localisation.launch"/>
 
-    <!-- gmapping -->
-    <!-- <include file="$(find-pkg-share sphero_rvr_navigation)/launch/gmapping.launch" /> -->
+    <!-- slam -->
+    <include file="$(find-pkg-share sphero_rvr_navigation)/launch/slam_toolbox.launch" />
 
-    <!--- move base -->
-    <!-- <include file="$(find-pkg-share sphero_rvr_navigation)/launch/move_base_flex.launch" /> -->
+    <!--- nav2 -->
+    <!-- <include file="$(find-pkg-share sphero_rvr_navigation)/launch/nav2.launch" /> -->
 
     <!-- gazebo -->
     <include file="$(find-pkg-share ros_gz_sim)/launch/gz_server.launch">

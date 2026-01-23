@@ -12,6 +12,7 @@
 
   <exec_depend>sphero_rvr_description</exec_depend>
   <exec_depend>sphero_rvr_controllers</exec_depend>
+  <exec_depend>sphero_rvr_navigation</exec_depend>
 
   <exec_depend>ros_gz_sim</exec_depend>
   <exec_depend>ros_gz_bridge</exec_depend>

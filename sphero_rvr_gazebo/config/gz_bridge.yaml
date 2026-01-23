@@ -4,3 +4,17 @@
   ros_type_name: "rosgraph_msgs/msg/Clock"
   gz_type_name: "gz.msgs.Clock"
   direction: GZ_TO_ROS
+
+# gz topic published by the IMU sensor plugin
+- ros_topic_name: "sim/imu"
+  gz_topic_name: "/imu"
+  ros_type_name: "sensor_msgs/msg/Imu"
+  gz_type_name: "gz.msgs.IMU"
+  direction: GZ_TO_ROS
+
+# gz topic published by the GPS sensor plugin
+- ros_topic_name: "sim/fix"
+  gz_topic_name: "/fix"
+  ros_type_name: "sensor_msgs/msg/NavSatFix"
+  gz_type_name: "gz.msgs.NavSat"
+  direction: GZ_TO_ROS

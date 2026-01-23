@@ -1,0 +1,5 @@
+# TODO
+
+- [ ] custom gazebo plugins for RVR sensors - ambient light, ground color
+- [ ] gui switch not implemented properly
+- [ ] laser scan not working properly
